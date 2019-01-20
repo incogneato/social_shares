@@ -1,6 +1,6 @@
 module SocialShares
   class Pinterest < Base
-    URL = 'http://api.pinterest.com/v1/urls/count.json'
+    URL = 'https://api.pinterest.com/v1/urls/count.json'
 
     def shares!
       response = get(URL, params: { url: checked_url })
